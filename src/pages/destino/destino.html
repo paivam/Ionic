@@ -15,15 +15,17 @@
 
 <ion-content padding>
 
-    <ion-card>
-        <ion-card-content>
-        <ion-card-title>
+  <ion-card>
+    <ion-card-content>
+      <ion-card-title>
         {{livro.nome}}
-        </ion-card-title>
-        <p>
+      </ion-card-title>
+      <p>
         {{livro.autor}}
-        </p>
-        </ion-card-content>
-        </ion-card>
+      </p>
+    </ion-card-content>
+    <button ion-button color="danger">Deletar</button>
+    <button ion-button (click)="alterarLivro(livrinho)">Alterar</button>
+  </ion-card>
 
 </ion-content>

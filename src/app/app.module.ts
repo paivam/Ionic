@@ -10,27 +10,35 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { DestinoPageModule } from '../pages/destino/destino.module';
 import { AdicionarPage } from '../pages/adicionar/adicionar';
 
+import {HttpModule} from "@angular/http";
+import { BookProvider } from '../providers/book/book';
+import { ListaLivrosApiPage } from '../pages/lista-livros-api/lista-livros-api';
+
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AdicionarPage
+    AdicionarPage,
+    ListaLivrosApiPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    DestinoPageModule
+    DestinoPageModule,
+    HttpModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    AdicionarPage
+    AdicionarPage,
+    ListaLivrosApiPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    BookProvider
   ]
 })
 export class AppModule {}

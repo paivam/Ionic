@@ -15,7 +15,7 @@ export class HomePage {
     this.livros = [];
 
     var l1 = { nome: '1984', autor: 'George Orwell' };
-    var l2 = { nome: 'Harry Potter reliquias da morte', autor: 'J. K. Rowling' };
+    var l2 = { nome: 'Harry Potter e as reliquias da morte', autor: 'J. K. Rowling' };
     var l3 = { nome: 'O Senhor dos Anéis', autor: 'J. R. R. Tolkien' };
     var l4 = { nome: 'Fundação', autor: 'Isaac Asimov' };
     var l5 = { nome: 'Neuromancer', autor: 'William Gibson' };
